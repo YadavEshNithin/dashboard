@@ -8,7 +8,7 @@ const Schedulecard = () => {
 
 
                 <div className="mt-16 p-2 font-bold flex justify-between"> <h1 className="mt-3 p-2">
-                Today's Schedule
+                {`Today's Schedule`}
                 </h1>
                 <p className="mr-3 mt-3 text-gray-400 p-2 flex items-center space-x-2"><span className="font-normal">See all</span>  <MdArrowForwardIos className=""/></p>
 

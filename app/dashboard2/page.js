@@ -41,7 +41,7 @@ const Dashboard2 = () => {
                         Board.</span>
                     <div className="flex flex-col gap-4 relative p-3 mt-3">
                         {menus?.map((menu, i) => (
-                            <Link className="flex items-center space-x-6 py-2 group text-sm  gap-3.5 font-medium   hover:bg-gray-800 rounded-md" href={menu?.link}>
+                            <Link key={i} className="flex items-center space-x-6 py-2 group text-sm  gap-3.5 font-medium   hover:bg-gray-800 rounded-md" href={menu?.link}>
                                 <div className="">
                                     {React.createElement(menu.icon, { size: 20 })}
                                 </div>

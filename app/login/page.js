@@ -149,7 +149,7 @@ const Login = () => {
                                     sign in
                                 </button>
                                 <div className="mt-14 text-center text-sm font-medium">
-                                    Don't have an account?<span onClick={() => router.push("/signup")} className="text-blue-600 cursor-pointer">Register here</span>
+                                    {`Don't have an account?`}<span onClick={() => router.push("/signup")} className="text-blue-600 cursor-pointer">Register here</span>
                                 </div>
                             </div>
                         </form>
