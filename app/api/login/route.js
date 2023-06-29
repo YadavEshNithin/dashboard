@@ -9,14 +9,14 @@ export async function POST(req) {
         try {
             await connectToDB()
             let user = await User.findOne({ "email": email });
-            console.log(email,"login")
-            console.log(password)
-            console.log(user.email)
-            console.log(user.password)
+            // console.log(email,"login")
+            // console.log(password)
+            // console.log(user.email)
+            // console.log(user.password)
 
             const bytes = CryptoJS.AES.decrypt(user.password, 'secret123');
             let decryptedData = (bytes.toString(CryptoJS.enc.Utf8));
-            console.log(decryptedData,"dec")
+            // console.log(decryptedData,"dec")
             if (user) {
                 if (email == user.email && password == decryptedData) {
                     var token = jwt.sign({
