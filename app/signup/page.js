@@ -31,7 +31,7 @@ const SignUp = () => {
 
         const data = { name, email, password }
 
-        let res = await fetch("http://localhost:3000/api/signup", {
+        let res = await fetch("https://dashboard-3oiqkasnp-yadaveshnithin.vercel.app/api/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
