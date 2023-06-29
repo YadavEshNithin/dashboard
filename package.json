@@ -2,6 +2,7 @@
   "name": "assignment_openinapp",
   "version": "0.1.0",
   "private": true,
+  "proxy":"https://dashboard-taupe-theta.vercel.app",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,6 +14,7 @@
     "@heroicons/react": "^2.0.18",
     "autoprefixer": "10.4.14",
     "chart.js": "^4.3.0",
+    "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
     "eslint": "^8.28.0",
     "eslint-config-next": "^12.1.1",
