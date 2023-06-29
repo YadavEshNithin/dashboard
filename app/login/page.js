@@ -97,7 +97,7 @@ const Login = () => {
                 Board.
                </p>
             </div>
-            <div className="sm:hidden flex items-center justify-center h-20 bg-black ">
+            <div className="sm:hidden flex items-center justify-center h-20 bg-black overflow-hidden">
                 <p className=" text-white cursor-pointer p-3 hover:border shadow font-semibold text-3xl">
                     Board.
                 </p>
@@ -105,7 +105,7 @@ const Login = () => {
             <div className="flex justify-center items-center h-screen p-3 mx-auto">
                 <div className=" flex justify-center items-center h-auto">
                     <div className="w-[420px] bg-gray-100 p-3 border  border-gray-100 rounded-md space-y-3">
-                        <h1 className="font-bold text-3xl ">
+                        <h1 className="font-bold text-3xl px-6 sm:px-0">
                             Sign in
                             <p className="font-medium text-base">
                                 Sign in to your account
