@@ -148,7 +148,7 @@ const Login = () => {
                                 <button  className="w-full py-1.5 bg-black text-white font-semibold mt-6 rounded-md">
                                     sign in
                                 </button>
-                                <div className="mt-14 text-center text-sm font-medium">
+                                <div className="mt-8 sm:mt-14 text-center text-sm font-medium">
                                     {`Don't have an account?`}<span onClick={() => router.push("/signup")} className="text-blue-600 cursor-pointer">Register here</span>
                                 </div>
                             </div>
