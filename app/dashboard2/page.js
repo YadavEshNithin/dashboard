@@ -61,7 +61,7 @@ const Dashboard2 = () => {
                         ))}
                     </div>
                 </div>
-                <div className={`${open ? "sm:w-[80%]" : "w-full"} `}>
+                <div className={`${open ? "sm:w-[80%] mx-auto" : "w-full"} `}>
                     <div className="">
                         <Topcards />
                         <BarChart />
