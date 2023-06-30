@@ -16,12 +16,12 @@ const Uppernav = () => {
         <main className="z-50  w-full top-0 sticky">
             <div className="relative flex items-center h-20 text-white bg-black text-3xl font-medium">
                 <p  onClick={()=>setOpen(!open)} className="cursor-pointer ml-3">{open ? <RxCrossCircled/> : <HiMenuAlt3/>}</p>
-                <p className=" text-center w-full ml-20">Board.</p>
+                <p className=" text-center w-full ml-16">Board.</p>
                
-                <p onClick={()=>router.push("/login")} className="text-sm whitespace-nowrap mr-4 border border-gray-200 p-2 rounded-xl cursor-pointer">
+                <p onClick={()=>router.push("/login")} className="text-xs whitespace-nowrap mr-2 border border-gray-200 p-2 rounded-xl cursor-pointer">
                     Sign out
                 </p>
-                <Image onClick={session?signOut:signIn} className="rounded-full mr-3 cursor-pointer" src={session?session.user.image:"/pngwing.com (8).png"} width={30} height={30} alt="user_image"/>
+                <Image onClick={session?signOut:signIn} className="rounded-full mr-2 cursor-pointer" src={session?session.user.image:"/pngwing.com (8).png"} width={30} height={30} alt="user_image"/>
                
 
             </div>

@@ -28,7 +28,7 @@ const Dashboard2 = () => {
 
     return (
         <>
-            <div className="inline-block w-full sm:hidden">
+            <div className="inline-block w-full sm:hidden sticky top-0 z-20">
                 <Uppernav />
             </div>
             <section className=" flex overflow-x-hidden m-2 gap-2 rounded-2xl">
@@ -37,7 +37,7 @@ const Dashboard2 = () => {
 
                         <HiMenuAlt3 onClick={() => setOpen(!open)} className="cursor-pointer" size={20} />
                     </div>
-                    <span className={`${!open && " flex opacity-0 translate-x-28 duration-500"}   text-white text-3xl whitespace-pre overflow-hidden`}>
+                    <span className={`${!open && " flex opacity-0 translate-x-28 duration-500"}   text-white text-3xl font-medium whitespace-pre overflow-hidden`}>
                         Board.</span>
                     <div className="flex flex-col gap-4 relative p-3 mt-3">
                         {menus?.map((menu, i) => (
@@ -47,7 +47,7 @@ const Dashboard2 = () => {
                                 </div>
                                 <h2
                                     style={{ transitionDelay: `${i + 3}00ms` }}
-                                    className={` whitespace-pre duration-500 ${!open && " translate-x-28  opacity-0 overflow-hidden"}`}>
+                                    className={` font-normal text-gray-200 text-lg whitespace-pre duration-500 ${!open && " translate-x-28  opacity-0 overflow-hidden"}`}>
                                     {menu.name}
                                 </h2>
                                 <h2
@@ -61,7 +61,7 @@ const Dashboard2 = () => {
                         ))}
                     </div>
                 </div>
-                <div className="w-full ">
+                <div className={`${open ? "sm:w-[80%]" : "w-full"} `}>
                     <div className="">
                         <Topcards />
                         <BarChart />
